@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discussions Needed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Discussions Needed</h1>
+        </div>
+    </header>
+    <main>
+        <section id="discussions">
+            <div class="container">
+
+            </div>
+        </section>
+        <section id="form-section">
+            <div class="container">
+                <form action="#">
+                    <fieldset id="participants-section">
+                        <legend>Add Participants</legend>
+                        <div class="row">
+                            <div class="participants-fields">
+                                <label for="participants">Participants</label>
+                                <input type="text" id="participants" name="participants">
+                                <button id="add-participant" class="btn">Add Participant</button>
+                            </div>
+                            <div class="participants-wanted">
+                                <ul id="participant-list">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Discussion Description</legend>
+                        <textarea wrap="hard" name="discussion-description" id="discussion-description" rows="5"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button id="add-discussion" class="btn">Add Discussion</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+            <button class="btn show-form">+</button>
+    </main>
+    <footer>
+        <p>&copy; Scrum Assist</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/*********
+Base Styles
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    margin: 0;
+}
+
+body,
+input,
+textarea,
+.btn {
+    font-family: Montserrat;
+}
+
+.container {
+    max-width: 1300px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+/*********
+Form element styles
+ */
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+input,
+textarea{
+    padding: 5px;
+}
+
+fieldset {
+    margin-top: 15px;
+    padding-right: 20px;
+}
+
+fieldset:first-of-type {
+    margin-top: 0;
+}
+
+fieldset:last-of-type {
+    position: relative;
+    border: none;
+}
+
+fieldset:last-of-type button {
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+}
+
+/*
+Buttons
+ */
+
+.btn {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    transition: background-color .25s;
+
+}
+
+#add-participant {
+    background-color: #FEF5AB;
+    border: solid 1px #FEF5AB;
+    color: #000;
+}
+
+#add-discussion {
+    background-color: #FED0AB;
+    border: solid 1px #FED0AB;
+
+}
+
+#add-discussion:hover,
+#add-participant:hover {
+    background-color: #313F73;
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+.show-form {
+    border-radius: 50%;
+    font-size: 2.5em;
+    height: 50px;
+    width: 50px;
+    line-height: 0;
+    position: fixed;
+    right: 15%;
+    top: 30%;
+    background-color: #313F73;
+    color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/****
+Main content
+ */
+
+header {
+    padding: 15px 0;
+
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+main {
+    background-color: #e6e6e6;
+    padding: 100px 0;
+}
+
+form {
+    background-color: #313F73;
+    padding: 50px;
+    border-radius: 10px;
+    width: 50%;
+    color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/**********
+Cards
+ */
+
+article {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2px 15px 5px;
+    margin-bottom: 25px;
+    width: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow-wrap: break-word;
+}
+
+article h2 {
+    font-size: 1.1em;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+ }
+
+article li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+article span {
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.3em;
+}
