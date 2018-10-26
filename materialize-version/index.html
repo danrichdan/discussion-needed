@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discussions Needed</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--HEADER BEGIN-->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Scrum Assist</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Discussions Needed</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Standup</a></li>
+                    </ul>
+
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Discussions Needed</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Standup</a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HEADER END-->
+
+    <main>
+        <section>
+            <div class="container">
+                <h3>Discussions Needed</h3>
+            </div>
+        </section>
+        <!--DISCUSSIONS NEEDED LIST SECTION BEGIN-->
+        <section id="discussion-section">
+            <div class="container">
+                <div id="discussion-area" class="row">
+                    <div class="discussion-list z-depth-3 s12 m9">
+                        <ul class="collection">
+                            <!--<li class="collection-item">-->
+                                <!--<span class="disc-particpants">Joe and Jessica </span>-->
+                                <!--<span class="disc-description">API KEy is missing from USSF something or other</span>-->
+                                <!--<i class="material-icons close">delete</i>-->
+                            <!--</li>-->
+                            <!--<li class="collection-item">Alvin-->
+                               <!--<i class="material-icons close">delete</i>-->
+                            <!--</li>-->
+                            <!--<li class="collection-item">Alvin-->
+                                <!--<i class="material-icons close">delete</i>-->
+                            <!--</li>-->
+                            <!--<li class="collection-item">Alvin-->
+                                <!--<i class="material-icons close">delete</i>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ADD DISCUSSION FORM SECTION BEGIN-->
+        <section id="add-section">
+            <div class="container">
+                <div class="add-discussion z-depth-3 col s12 m6">
+                    <i class="material-icons right close-form">close</i>
+                    <h4>Add Discussion</h4>
+                    <div class="row">
+                        <form id="add-form" class="col s12" action="#">
+
+                            <!--PARTICIPANT FIELD BEGIN-->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <select id="participants" multiple>
+                                        <option value="" disabled selected>Choose one or more participants</option>
+                                        <option value="Joe">Joe</option>
+                                        <option value="John">John</option>
+                                        <option value="Jessica">Jessica</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--PARTICIPANT FIELD END-->
+
+                            <!--DISCUSSION FIELD BEGIN-->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">mode_edit</i>
+                                    <label for="discussion_description">Discussion Description</label>
+                                    <textarea id="discussion_description" class="materialize-textarea"></textarea>
+                                </div>
+                            </div>
+                            <!--DISCUSSION FIELD END-->
+                            <a class="waves-effect waves-light btn add-btn">Add</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ADD DISCUSSION FORM SECTION END-->
+
+        <!--ADD BUTTON-->
+        <div class="fixed-action-btn horizontal show-form-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">add</i>
+            </a>
+        </div>
+    </main>
+
+    <!--SCRIPTS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

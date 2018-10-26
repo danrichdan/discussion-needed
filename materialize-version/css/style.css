@@ -1,0 +1,80 @@
+/*****
+HEADER
+ */
+
+.side-nav {
+    padding-top: 50px;
+}
+
+/*****
+DISCUSSION LIST SECTION
+ */
+
+.collection-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection-item span {
+    display: flex;
+    align-items: center;
+}
+
+.collection-item:nth-of-type(even) {
+    background-color: rgba(238,238,238, .6);
+}
+
+.close,
+.close-form,
+.edit-btn {
+    cursor: pointer;
+}
+
+.edit-btn {
+    margin-right: 15px;
+}
+
+
+
+
+/********
+ADD DISCUSSION FORM SECTION
+ */
+
+.add-discussion {
+    width: 98%;
+    padding: 25px;
+    margin: 100px 5px;
+}
+
+
+/*****
+MEDIA QUERIES
+ */
+@media only screen and (max-width: 411px) {
+    nav .brand-logo {
+        font-size: 1.85rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    nav .brand-logo {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .add-discussion {
+        width: 75%;
+        margin: 100px 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .add-discussion {
+        width: 50%;
+        margin: 100px auto;
+    }
+}
+
