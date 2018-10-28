@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Scrum Assist | Dashboard</title>
+</head>
+<body>
+    <!--HEADER BEGIN-->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="dashboard.html" class="brand-logo">Scrum Assist</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Discussions Needed</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Reports<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#">Standup</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="index.html">Discussions Needed</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Reports<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#">Standup</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+            <!--MENU DROP DOWN ITEMS-->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="user-story.html">User Story Acceptance Criteria Report</a></li>
+                <li class="divider"></li>
+                <li><a href="process-control.html">Process Control Report</a></li>
+            </ul>
+            <ul id="dropdown2" class="dropdown-content">
+                <li><a href="user-story.html">User Story Acceptance Criteria Report</a></li>
+                <li class="divider"></li>
+                <li><a href="process-control.html">Process Control Report</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--HEADER END-->
+
+    <main>
+        <section id="dashboard-heading">
+            <div class="container">
+                <h3>Dashboard</h3>
+            </div>
+        </section>
+        <section id="dashboard">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col s12 l6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Discussions Needed</span>
+                                <p>This is a regaularly updated list of discussions that are needed to take place in
+                                    order to unblock a project.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">View Discussions</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 l6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">User Story / Acceptance Criteria Report</span>
+                                <p>This report is used to measure the approximate quality of tickets which should
+                                    contain both well-written User Stories and specific Acceptance Criteria.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Data</a>
+                                <a href="#">Charts</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col s12 l6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Process Control Report</span>
+                                <p>This report is used to show where the bottlenecks exist in the development process.
+                                It details the product and development deparments' pipelines.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Data</a>
+                                <a href="#">Charts</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 l6">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Daily Standup Notes</span>
+                                <p>This is an application to help keep track of what you worked on, what you are
+                                    working on, and if you have any blockers.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">View Standup Notes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--SCRIPTS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

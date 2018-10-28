@@ -3,6 +3,7 @@ $(document).ready(function() {
     $(".button-collapse").sideNav({
         edge: 'right'
     });
+    $('ul.tabs').tabs();
     //Initialize Materialize Select Drop Down
     $('select').material_select();
     $('.show-form-btn').hide();
@@ -80,6 +81,7 @@ function deleteListItem() {
     $('.close').on('click', function() {
         var self = $(this);
         self = self.parent();
+        self = self.parent();
         self.remove();
     });
 };
@@ -99,15 +101,179 @@ function showFormButton() {
 
 function editDiscussion() {
     $('.edit-btn').on('click', function() {
+        $('select').material_select();
         var parent = $(this).parent();
         var uncles = parent.prevAll();
         $('.add-btn').text('Update');
 
         var list_participants = $(uncles[1]).text();
         var list_description = $(uncles[0]).text();
+        $('select').prop('selectedIndex', 2);
         $('textarea').val(list_description);
-
         console.log(list_participants, list_description);
     });
-
 };
+
+/************
+ *  CHARTS
+ ************/
+
+/***********
+ USER STORY / ACCEPTANCE CRITERIA REPORT
+ */
+var options = {
+    chart: {
+        height: 350,
+        type: 'bar',
+        stacked: true,
+        toolbar: {
+            show: true
+        },
+        zoom: {
+            enabled: true
+        }
+    },
+    responsive: [{
+        breakpoint: 700,
+        options: {
+            legend: {
+                position: 'bottom',
+                offsetX: -10,
+                offsetY: 0
+            }
+        }
+    }],
+    plotOptions: {
+        bar: {
+            horizontal: false,
+        },
+    },
+    series: [{
+        name: 'PRODUCT A',
+        data: [44, 55, 41, 67, 22, 43]
+    },{
+        name: 'PRODUCT B',
+        data: [13, 23, 20, 8, 13, 27]
+    },{
+        name: 'PRODUCT C',
+        data: [11, 17, 15, 15, 21, 14]
+    },{
+        name: 'PRODUCT D',
+        data: [21, 7, 25, 13, 22, 8]
+    }],
+    xaxis: {
+        type: 'datetime',
+        categories: ['01/01/2011 GMT', '01/02/2011 GMT', '01/03/2011 GMT', '01/04/2011 GMT', '01/05/2011 GMT', '01/06/2011 GMT'],
+    },
+    legend: {
+        position: 'right',
+    },
+    fill: {
+        opacity: 1
+    },
+}
+
+var chart1 = new ApexCharts(document.querySelector("#user-story-chart"), options);
+
+
+/***********
+ PROCESS CONTROL REPORT
+ */
+
+var options = {
+    chart: {
+        height: 350,
+        type: 'area',
+        stacked: true,
+        events: {
+            selection: function(chart, e) {
+                console.log(new Date(e.xaxis.min) )
+            }
+        },
+
+    },
+    responsive: [{
+        breakpoint: 700,
+        options: {
+            legend: {
+                position: 'bottom',
+                offsetX: -10,
+                offsetY: 0
+            }
+        }
+    }],
+    colors: ['#008FFB', '#00E396', '#CED4DC'],
+    dataLabels: {
+        enabled: false
+    },
+    stroke: {
+        curve: 'smooth'
+    },
+
+    series: [{
+        name: 'South',
+        data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
+            min: 10,
+            max: 60
+        })
+    },
+        {
+            name: 'North',
+            data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
+                min: 10,
+                max: 20
+            })
+        },
+
+        {
+            name: 'Central',
+            data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
+                min: 10,
+                max: 15
+            })
+        }
+    ],
+    fill: {
+        gradient: {
+            enabled: true,
+            opacityFrom: 0.6,
+            opacityTo: 0.8,
+        }
+    },
+    legend: {
+        position: 'top',
+        horizontalAlign: 'left'
+    },
+    xaxis: {
+        type: 'datetime'
+    },
+}
+
+var chart = new ApexCharts(
+    document.querySelector("#process-control-chart"),
+    options
+);
+
+
+/*
+ // this function will generate output in this format
+ // data = [
+ [timestamp, 23],
+ [timestamp, 33],
+ [timestamp, 12]
+ ...
+ ]
+ */
+function generateDayWiseTimeSeries(baseval, count, yrange) {
+    var i = 0;
+    var series = [];
+    while (i < count) {
+        var x = baseval;
+        var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+
+        series.push([x, y]);
+        baseval += 86400000;
+        i++;
+    }
+    return series;
+}

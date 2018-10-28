@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrum Assist | Reports | User Story / Acceptance Criteria</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reports.css">
+</head>
+<body>
+
+    <!--HEADER BEGIN-->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Scrum Assist</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Discussions Needed</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Reports<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#">Standup</a></li>
+                    </ul>
+
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Discussions Needed</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Reports<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#">Standup</a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+            <!--MENU DROP DOWN ITEMS-->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="user-story.html">User Story Acceptance Criteria Report</a></li>
+                <li class="divider"></li>
+                <li><a href="process-control.html">Process Control Report</a></li>
+            </ul>
+            <ul id="dropdown2" class="dropdown-content">
+                <li><a href="user-story.html">User Story Acceptance Criteria Report</a></li>
+                <li class="divider"></li>
+                <li><a href="process-control.html">Process Control Report</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--HEADER END-->
+
+    <main>
+        <section id="user-story-heading">
+            <div class="container">
+                <h3>Reports</h3>
+                <hr>
+                <h4>User Story / Acceptance Criteria Report</h4>
+            </div>
+        </section>
+        <section id="reports-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s3"><a class="active" href="#us-ac-chart">View Chart</a></li>
+                            <li class="tab col s3"><a href="#us-ac-data">View Data</a></li>
+                            <li class="tab col s3"><a href="#us-ac-form">Add Data</a></li>
+                        </ul>
+                    </div>
+                    <div id="us-ac-chart" class="col s12">
+                        <h5>Charts</h5>
+                        <div id="user-story-chart">
+
+                        </div>
+                    </div>
+
+                    <!--View Data Tab \ Tables Tab-->
+                    <div id="us-ac-data" class="col s12">
+
+                        <!--Tables by Owning Unit-->
+                        <h5>Product Managers</h5>
+                        <table class="striped centered">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Story</th>
+                                    <th>Bug</th>
+                                    <th>Other</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/02/2018</td>
+                                    <td>0</td>
+                                    <td>8</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/03/2018</td>
+                                    <td>2</td>
+                                    <td>7</td>
+                                    <td>24</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5>Quality Assurance</h5>
+                        <table class="striped centered">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Story</th>
+                                    <th>Bug</th>
+                                    <th>Other</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>5</td>
+                                    <td>9</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/02/2018</td>
+                                    <td>2</td>
+                                    <td>7</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/03/2018</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5>Other Owner Type</h5>
+                        <table class="striped centered">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Story</th>
+                                    <th>Bug</th>
+                                    <th>Other</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="date">09/01/2018</td>
+                                <td>5</td>
+                                <td>9</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td class="date">09/02/2018</td>
+                                <td>2</td>
+                                <td>7</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td class="date">09/03/2018</td>
+                                <td>5</td>
+                                <td>7</td>
+                                <td>2</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Table Showing All Owning Unit Types-->
+                        <h5>All - Owning Unit</h5>
+                        <table class="striped responsive-table centered">
+                            <thead>
+                                <th>Owning Unit</th>
+                                <th>09/01/2018</th>
+                                <th>09/02/2018</th>
+                                <th>09/03/2018</th>
+                                <th>09/04/2018</th>
+                                <th>09/05/2018</th>
+                                <th>09/06/2018</th>
+                                <th>09/07/2018</th>
+                                <th>09/08/2018</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Story (PO)</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Bug (PO)</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Other (PO)</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Story (QA)</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Bug (QA)</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Other (QA)</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Story (O)</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Bug (O)</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Other (O)</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Table Showing ALl Unit Types by Date-->
+                        <h5>All - By Date</h5>
+                        <table class="striped responsive-table centered">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Story (PO)</th>
+                                    <th>Bug (PO)</th>
+                                    <th>Other (PO)</th>
+                                    <th>Story (QA)</th>
+                                    <th>Bug (QA)</th>
+                                    <th>Other (QA)</th>
+                                    <th>Story (O)</th>
+                                    <th>Bug (O)</th>
+                                    <th>Other (O)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>7</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>10</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>10</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>10</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>10</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="date">09/01/2018</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>10</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!--Add Data Tab / Form to Add Data-->
+                    <div id="us-ac-form" class="col s12">
+                        <div class="row">
+                            <form class="col s12" action="#">
+
+                                <!--Product Owner Row-->
+                                <div class="row">
+                                    <h5>Product Owners</h5>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Story" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Bug" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Other" type="text">
+                                    </div>
+                                </div>
+
+                                <!--Quality Assurance Row-->
+                                <div class="row">
+                                    <h5>Quality Assurance</h5>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Story" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Bug" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Other" type="text">
+                                    </div>
+                                </div>
+
+                                <!--Other Owner Type Row-->
+                                <div class="row">
+                                    <h5>Other Owner Type</h5>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Story" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Bug" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Other" type="text">
+                                    </div>
+                                </div>
+                                <a class="waves-effect waves-light btn">Add</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--SCRIPTS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/main.js"></script>
+    <script>
+        chart1.render();
+    </script>
+</body>
+</html>

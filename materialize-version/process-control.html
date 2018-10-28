@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reports.css">
+    <title>Scrum Assist | Dashboard</title>
+</head>
+<body>
+    <!--HEADER BEGIN-->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="dashboard.html" class="brand-logo">Scrum Assist</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Discussions Needed</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Reports<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#">Standup</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Discussions Needed</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Reports<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#">Standup</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+            <!--MENU DROP DOWN ITEMS-->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="user-story.html">User Story Acceptance Criteria Report</a></li>
+                <li class="divider"></li>
+                <li><a href="process-control.html">Process Control Report</a></li>
+            </ul>
+            <ul id="dropdown2" class="dropdown-content">
+                <li><a href="user-story.html">User Story Acceptance Criteria Report</a></li>
+                <li class="divider"></li>
+                <li><a href="process-control.html">Process Control Report</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--HEADER END-->
+
+    <main>
+        <section id="process-control-heading">
+            <div class="container">
+                <h3>Reports</h3>
+                <hr>
+                <h4>Process Control Report</h4>
+            </div>
+        </section>
+        <section id="reports-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+
+                        <!--TABS-->
+                        <ul class="tabs">
+                            <li class="tab col s3"><a href="#proc-con-chart">View Chart</a></li>
+                            <li class="tab col s3"><a href="#us-ac-data">View Data</a></li>
+                            <li class="tab col s3"><a class="active" href="#proc-con-form">Add Data</a></li>
+                        </ul>
+                    </div>
+
+                    <!--Chart-->
+                    <div id="proc-con-chart" class="col s12">
+                        <h5>Charts</h5>
+                        <div id="process-control-chart">
+
+                        </div>
+                    </div>
+
+                    <!--View Data Tab \ Tables Tab-->
+                    <div id="us-ac-data" class="col s12">
+
+                        <!--Tables by Owning Unit-->
+                        <h5>All by Date</h5>
+                        <table class="centered striped responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>09/01/2018</th>
+                                    <th>09/02/2018</th>
+                                    <th>09/03/2018</th>
+                                    <th>09/04/2018</th>
+                                    <th>09/04/2018</th>
+                                    <th>09/04/2018</th>
+                                    <th>09/04/2018</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>50</td>
+                                    <td>52</td>
+                                    <td>55</td>
+                                    <td>57</td>
+                                    <td>51</td>
+                                    <td>54</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>Hotfixes</td>
+                                    <td>50</td>
+                                    <td>52</td>
+                                    <td>55</td>
+                                    <td>57</td>
+                                    <td>51</td>
+                                    <td>54</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>MOP</td>
+                                    <td>10</td>
+                                    <td>15</td>
+                                    <td>17</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>QA</td>
+                                    <td>20</td>
+                                    <td>22</td>
+                                    <td>25</td>
+                                    <td>27</td>
+                                    <td>21</td>
+                                    <td>28</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>Dodgers</td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                    <td>15</td>
+                                    <td>14</td>
+                                    <td>18</td>
+                                    <td>22</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Padres</td>
+                                    <td>5</td>
+                                    <td>12</td>
+                                    <td>15</td>
+                                    <td>17</td>
+                                    <td>11</td>
+                                    <td>18</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Product</td>
+                                    <td>32</td>
+                                    <td>33</td>
+                                    <td>34</td>
+                                    <td>30</td>
+                                    <td>45</td>
+                                    <td>48</td>
+                                    <td>40</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--Tables by Owning Unit-->
+                        <h5>All by Owning Unit</h5>
+                        <table class="centered striped responsive-table">
+                            <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Hotfixes</th>
+                                <th>MOP</th>
+                                <th>QA</th>
+                                <th>Dodgers</th>
+                                <th>Padres</th>
+                                <th>Product</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>09/01/2018</td>
+                                <td>50</td>
+                                <td>52</td>
+                                <td>55</td>
+                                <td>57</td>
+                                <td>51</td>
+                                <td>54</td>
+                                <td>54</td>
+                            </tr>
+                            <tr>
+                                <td>09/02/2018</td>
+                                <td>10</td>
+                                <td>15</td>
+                                <td>17</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>54</td>
+                            </tr>
+                            <tr>
+                                <td>09/03/2018</td>
+                                <td>20</td>
+                                <td>22</td>
+                                <td>25</td>
+                                <td>27</td>
+                                <td>21</td>
+                                <td>28</td>
+                                <td>54</td>
+                            </tr>
+                            <tr>
+                                <td>09/04/2018</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>15</td>
+                                <td>14</td>
+                                <td>18</td>
+                                <td>22</td>
+                                <td>54</td>
+                            </tr>
+                            <tr>
+                                <td>09/04/2018</td>
+                                <td>5</td>
+                                <td>12</td>
+                                <td>15</td>
+                                <td>17</td>
+                                <td>11</td>
+                                <td>18</td>
+                                <td>54</td>
+                            </tr>
+                            <tr>
+                                <td>09/04/2018</td>
+                                <td>32</td>
+                                <td>33</td>
+                                <td>34</td>
+                                <td>30</td>
+                                <td>45</td>
+                                <td>48</td>
+                                <td>54</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <!--Add Data Tab / Form to Add Data-->
+                    <div id="proc-con-form" class="col s12">
+                        <div class="row">
+                            <form class="col s12" action="#">
+                                <!--Product Owner Row-->
+                                <div class="row">
+                                    <h5>Watermelon</h5>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Total" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Hotfixes" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="MOP" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s3">
+                                        <input placeholder="QA" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Dodgers" type="text">
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input placeholder="Padres" type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s3">
+                                        <input placeholder="Product" type="text">
+                                    </div>
+                                </div>
+                                <a class="waves-effect waves-light btn">Add</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--SCRIPTS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/main.js"></script>
+    <script>
+        chart.render();
+    </script>
+</body>
+</html>
